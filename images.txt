@@ -12,5 +12,6 @@
 #quay.io/brancz/kube-rbac-proxy:v0.14.2
 #grafana/grafana:9.5.3
 #quay.io/prometheus/prometheus:v2.46.0
-quay.io/prometheus/node-exporter:v1.6.1
-registry.k8s.io/prometheus-adapter/prometheus-adapter:v0.11.1
+#quay.io/prometheus/node-exporter:v1.6.1
+#registry.k8s.io/prometheus-adapter/prometheus-adapter:v0.11.1
+quay.io/prometheus/alertmanager:v0.26.0
