@@ -16,4 +16,4 @@
 #registry.k8s.io/prometheus-adapter/prometheus-adapter:v0.11.1
 #quay.io/prometheus/alertmanager:v0.26.0
 #loki镜像
-kartoza/geoserver:2.24.2 --platform=linux/arm64/v8
+kartoza/geoserver:2.24.2 --platform linux/arm64/v8
