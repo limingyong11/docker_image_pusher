@@ -17,3 +17,4 @@
 #quay.io/prometheus/alertmanager:v0.26.0
 #loki镜像
 kartoza/geoserver:2.24.2
+bitnami/jenkins:2.303.1-debian-10-r29
