@@ -143,16 +143,10 @@ jobs:
             docker tag $image $new_image
             echo "docker push $new_image"
             docker push $new_image
-            $WEBHOOK_URI="https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=e06c587f-5dbd-401a-8c62-8a49fd7f6e7f"
-            if docker push $new_image; then 
-                # 发送成功消息
-                echo "Successfully pushed: $new_image"  
-                curl -X POST -H "Content-type: application/json" -d "{\"msgtype\": \"text\", \"text\": {\"content\": \"镜像推送成功: $new_image\"}}" $WEBHOOK_URI  
-            else  
-                echo "Failed to push: $new_image"  
-                # 发送失败消息  
-                curl -X POST -H "Content-type: application/json" -d "{\"msgtype\": \"text\", \"text\": {\"content\": \"镜像推送失败: $new_image\"}}" $WEBHOOK_URI  
-            fi  
+            # 推送消息
+            WEBHOOK_URI="https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=e06c587f-5dbd-401a-8c62-8a49fd7f6e7f"
+            echo "Sending webhook message for $new_image"
+            curl -X POST -H "Content-type: application/json" -d "{\"msgtype\": \"text\", \"text\": {\"content\": \"镜像推送成功: $new_image\"}}" $WEBHOOK_URI
             echo "开始清理磁盘空间"
             echo "=============================================================================="
             df -hT
