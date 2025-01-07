@@ -143,6 +143,7 @@ jobs:
             docker tag $image $new_image
             echo "docker push $new_image"
             docker push $new_image
+            $WEBHOOK_URI="https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=e06c587f-5dbd-401a-8c62-8a49fd7f6e7f"
             if docker push $new_image; then 
                 # 发送成功消息
                 echo "Successfully pushed: $new_image"  
