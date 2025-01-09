@@ -1,6 +1,10 @@
-registry.k8s.io/sig-storage/nfsplugin:v4.9.0
-registry.k8s.io/sig-storage/csi-provisioner:v5.0.2
-registry.k8s.io/sig-storage/csi-snapshotter:v8.0.1
-registry.k8s.io/sig-storage/livenessprobe:v2.13.1
-registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.11.1
-registry.k8s.io/sig-storage/snapshot-controller:v8.0.1
+goharbor/nginx-photon:v2.12.1
+goharbor/harbor-portal:v2.12.1
+goharbor/harbor-core:v2.12.1
+goharbor/harbor-jobservice:v2.12.1
+goharbor/registry-photon:v2.12.1
+goharbor/harbor-registryctl:v2.12.1
+goharbor/trivy-adapter-photon:v2.12.1
+goharbor/harbor-db:v2.12.1
+goharbor/redis-photon:v2.12.1
+goharbor/harbor-exporter:v2.12.1
