@@ -159,3 +159,6 @@ jobs:
             echo "=============================================================================="     
             
         done < images.txt
+        # 在所有镜像推送完成后发送一次通知  
+        echo "所有镜像推送完成，发送通知"  
+        curl -X POST -H "Content-type: application/json" -d "{\"msgtype\": \"text\", \"text\": {\"content\": \"所有镜像推送成功\"}}" $WEBHOOK_URI 
