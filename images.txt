@@ -8,3 +8,4 @@ goharbor/trivy-adapter-photon:v2.11.0
 goharbor/harbor-db:v2.11.0
 goharbor/redis-photon:v2.11.0
 goharbor/harbor-exporter:v2.11.0
+java:8u92-jre-alpine
