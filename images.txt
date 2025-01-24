@@ -1,3 +1,8 @@
 --platform=arm64 csiplugin/csi-qingcloud:v1.4.0
-
+--platform=arm64 csiplugin/csi-qingcloud:v1.4.0
+--platform=arm64 csiplugin/csi-provisioner:v2.2.2
+--platform=arm64 csiplugin/csi-attacher:v3.2.1
+--platform=arm64 csiplugin/csi-resizer: v1.2.0
+--platform=arm64 csiplugin/csi-snapshotter:v4.0.0
+--platform=arm64 csiplugin/csi-node-driver-registrar:v2.2.0
 
