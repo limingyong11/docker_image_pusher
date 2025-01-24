@@ -1,1 +1,3 @@
+--platform=arn64 csiplugin/csi-qingcloud:v1.4.0
+
 
