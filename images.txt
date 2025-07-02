@@ -1,6 +1,1 @@
-csiplugin/csi-qingcloud:v1.4.0
-csiplugin/csi-provisioner:v2.2.2
-csiplugin/csi-attacher:v3.2.1
-csiplugin/csi-resizer:v1.2.0
-csiplugin/csi-snapshotter:v4.0.0
-csiplugin/csi-node-driver-registrar:v2.2.0
+nginx
